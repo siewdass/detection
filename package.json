@@ -1,0 +1,16 @@
+{
+  "name": "detection",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/detection.node",
+  "scripts": {
+    "build": "cmake-js compile && cp build/Release/detection.node lib/",
+    "clean": "rm -rf node_modules build package-lock.json lib/detection.node",
+    "test": "node test.js",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "cmake-js": "^6.1.0",
+    "node-addon-api": "^3.1.0"
+  }
+}
