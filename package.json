@@ -6,8 +6,7 @@
   "scripts": {
     "build": "cmake-js compile && cp build/Release/detection.node lib/",
     "clean": "rm -rf node_modules build package-lock.json lib/detection.node",
-    "test": "node test.js",
-    "prepare": "cmake-js compile && cp build/Release/detection.node lib/"
+    "test": "node test.js"
   },
   "dependencies": {
     "cmake-js": "^6.1.0",
